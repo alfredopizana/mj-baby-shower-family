@@ -1,0 +1,107 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f9;
+    color: #333;
+  }
+
+  header {  
+    color:#454362;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  }
+
+  header img {
+    width: 80%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.header-text{
+  width: 100%;
+  top: 80px;
+  text-align: center;
+}
+  header h1 {   
+    font-size: 8em;
+    font-family: "Lucida Handwriting";
+  }
+
+  header h2 {   
+    font-size: 5em;
+    margin-top: 0;
+  }
+
+  header p {
+    font-size: 1.5em;    
+  }
+
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .event-detail{
+    background-color: #ffe9ee;
+    padding: 60px 30px;
+  }
+  .event-detail.where{
+    background-color: #ffa5ba;
+  }
+
+  h2 {
+    text-align: center;
+    color: #d36ba6;
+    margin-bottom: 30px;
+  }  
+
+  .baby-registry{
+    padding: 60px;
+    background-color:  #ffa5ba; 
+  }
+.baby-registry img{
+  max-width: 80%;
+  height: 120px;
+}
+  label {
+    font-weight: bold;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  a[type="button"] {
+    padding: 12px;
+    background-color: #d36ba6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #f9dbe6;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 791px) {
+    header h1 {
+      font-size: 2em;
+    }
+    header h2 {
+      font-size: 1.2em;
+    }
+
+    header p {
+      font-size: 1em;
+    }
+  }
