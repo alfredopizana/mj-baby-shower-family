@@ -1,8 +1,8 @@
-import { forwardRef, SVGProps } from "react";
+import { forwardRef, SVGProps } from 'react'
 
 type Props = {
-  name?: string;
-};
+  name?: string
+}
 
 const Leaf = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
   (props, ref) => {
@@ -111,8 +111,8 @@ const Leaf = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
           />
         </g>
       </svg>
-    );
-  },
-);
+    )
+  }
+)
 
-export default Leaf;
+export default Leaf

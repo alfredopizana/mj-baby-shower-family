@@ -1,15 +1,15 @@
-import Leaf from "../svgs/Leaf";
-import DaisyFlower from "../svgs/DaisyFlower";
-import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { Flip } from "gsap/Flip";
-import { GSDevTools } from "gsap/GSDevTools";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import Leaf from '../svgs/Leaf'
+import DaisyFlower from '../svgs/DaisyFlower'
+import { useRef } from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
+import { Flip } from 'gsap/Flip'
+import { GSDevTools } from 'gsap/GSDevTools'
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin'
+import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin'
 
-import banner from "../../assets/images/banner.png";
+import banner from '../../assets/images/banner.png'
 
 const HeroBanner = () => {
   gsap.registerPlugin(
@@ -17,30 +17,30 @@ const HeroBanner = () => {
     Flip,
     GSDevTools,
     MotionPathPlugin,
-    MorphSVGPlugin,
-  );
-  const leafRef = useRef<SVGSVGElement>(null);
-  const leafRef2 = useRef<SVGSVGElement>(null);
-  const daisyFlowerRef = useRef<SVGSVGElement>(null);
-  const daisyFlowerTopRef = useRef<SVGSVGElement>(null);
-  const daisyFlowerLeftRef = useRef<SVGSVGElement>(null);
+    MorphSVGPlugin
+  )
+  const leafRef = useRef<SVGSVGElement>(null)
+  const leafRef2 = useRef<SVGSVGElement>(null)
+  const daisyFlowerRef = useRef<SVGSVGElement>(null)
+  const daisyFlowerTopRef = useRef<SVGSVGElement>(null)
+  const daisyFlowerLeftRef = useRef<SVGSVGElement>(null)
   const scaleModifier = (scale, target) => {
-    return scale;
-  };
+    return scale
+  }
 
   useGSAP(() => {
     const leafTimeline = gsap.timeline({
-      defaults: { duration: 2, ease: "power1.inOut", repeat: -1, yoyo: true },
-    });
+      defaults: { duration: 2, ease: 'power1.inOut', repeat: -1, yoyo: true },
+    })
 
     leafTimeline
-      .from("#stem", { drawSVG: "50% 50%" }, 0)
-      .to("#stem", { drawSVG: "0% 100%" }, 0);
+      .from('#stem', { drawSVG: '50% 50%' }, 0)
+      .to('#stem', { drawSVG: '0% 100%' }, 0)
 
-    const startScale = 0;
-    const endScale = 1;
-    const start = 0.0;
-    [leafRef, leafRef2].forEach((documentReference) => {
+    const startScale = 0
+    const endScale = 1
+    const start = 0.0
+    ;[leafRef, leafRef2].forEach((documentReference) => {
       if (documentReference.current) {
         leafTimeline
           .from(
@@ -51,10 +51,10 @@ const HeroBanner = () => {
                 scaleX: scaleModifier,
                 scaleY: scaleModifier,
               },
-              transformOrigin: "bottom right",
+              transformOrigin: 'bottom right',
               rotate: -90,
             },
-            0,
+            0
           )
           .to(
             documentReference.current.querySelectorAll("[id^='leaf_left']"),
@@ -66,8 +66,8 @@ const HeroBanner = () => {
                 scaleY: scaleModifier,
               },
             },
-            0,
-          );
+            0
+          )
 
         leafTimeline
           .from(
@@ -78,10 +78,10 @@ const HeroBanner = () => {
                 scaleX: scaleModifier,
                 scaleY: scaleModifier,
               },
-              transformOrigin: "bottom left",
+              transformOrigin: 'bottom left',
               rotate: 90,
             },
-            0,
+            0
           )
           .to(
             documentReference.current.querySelectorAll("[id^='leaf_right']"),
@@ -94,10 +94,10 @@ const HeroBanner = () => {
               },
               repeat: -1,
             },
-            0,
-          );
+            0
+          )
       }
-    });
+    })
     gsap.set(
       [
         daisyFlowerRef.current,
@@ -107,9 +107,9 @@ const HeroBanner = () => {
       {
         opacity: 0,
         scale: 0.5,
-        transformOrigin: "center center",
-      },
-    );
+        transformOrigin: 'center center',
+      }
+    )
     gsap.to(
       [
         daisyFlowerRef.current,
@@ -117,16 +117,16 @@ const HeroBanner = () => {
         daisyFlowerLeftRef.current,
       ],
       {
-        transformOrigin: "center center",
+        transformOrigin: 'center center',
         opacity: 1,
         scale: 1,
         duration: 1.2,
-        ease: "back.out(2.0)",
+        ease: 'back.out(2.0)',
         repeat: -1,
         repeatDelay: 0,
         yoyo: true,
-      },
-    );
+      }
+    )
     if (
       daisyFlowerRef.current &&
       daisyFlowerTopRef.current &&
@@ -150,7 +150,7 @@ const HeroBanner = () => {
       //     yoyo: true
       //   });
     }
-  }); // <-- scope for selector text (optional)
+  }) // <-- scope for selector text (optional)
   return (
     <>
       <header className="container position-relative">
@@ -168,7 +168,7 @@ const HeroBanner = () => {
             ref={leafRef2}
             height="400px"
             width="400px"
-            style={{ transform: "rotate(0deg)", transformOrigin: "center" }}
+            style={{ transform: 'rotate(0deg)', transformOrigin: 'center' }}
           />
         </div>
         <div className="leaf-horizontal">
@@ -176,7 +176,7 @@ const HeroBanner = () => {
             ref={leafRef}
             height="400px"
             width="400px"
-            style={{ transform: "rotate(-90deg)", transformOrigin: "center" }}
+            style={{ transform: 'rotate(-90deg)', transformOrigin: 'center' }}
           />
         </div>
 
@@ -188,6 +188,6 @@ const HeroBanner = () => {
         </div>
       </header>
     </>
-  );
-};
-export default HeroBanner;
+  )
+}
+export default HeroBanner

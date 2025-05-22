@@ -1,8 +1,8 @@
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
 /* Base Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #fff8f9;
   color: #333;
 }
@@ -14,7 +14,7 @@ h2 {
   text-align: center;
   color: #d57f91;
   margin-bottom: 30px;
-  font-family: "Lucida Handwriting";
+  font-family: 'Lucida Handwriting';
 }
 
 label {
@@ -87,7 +87,7 @@ header img {
 }
 header h1 {
   font-size: 8em;
-  font-family: "Lucida Handwriting";
+  font-family: 'Lucida Handwriting';
 }
 
 header h2 {
@@ -124,7 +124,7 @@ section {
 
 .parallax {
   /* The image used */
-  background-image: url("/assets/images/parallax.png");
+  background-image: url('/assets/images/parallax.png');
   background-size: 46%;
 
   /* Set a specific height */

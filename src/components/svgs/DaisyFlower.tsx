@@ -1,8 +1,8 @@
-import { forwardRef, SVGProps } from "react";
+import { forwardRef, SVGProps } from 'react'
 
 type Props = {
-  name?: string;
-};
+  name?: string
+}
 
 const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
   (props, ref) => {
@@ -35,7 +35,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         <g opacity="0.5">
           <mask
             id="mask0_7_466"
-            style={{ maskType: "luminance" }}
+            style={{ maskType: 'luminance' }}
             maskUnits="userSpaceOnUse"
             x="41"
             y="95"
@@ -73,7 +73,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         <g opacity="0.5">
           <mask
             id="mask1_7_466"
-            style={{ maskType: "luminance" }}
+            style={{ maskType: 'luminance' }}
             maskUnits="userSpaceOnUse"
             x="45"
             y="54"
@@ -111,7 +111,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         <g opacity="0.5">
           <mask
             id="mask2_7_466"
-            style={{ maskType: "luminance" }}
+            style={{ maskType: 'luminance' }}
             maskUnits="userSpaceOnUse"
             x="57"
             y="49"
@@ -149,7 +149,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         <g opacity="0.5">
           <mask
             id="mask3_7_466"
-            style={{ maskType: "luminance" }}
+            style={{ maskType: 'luminance' }}
             maskUnits="userSpaceOnUse"
             x="83"
             y="92"
@@ -187,7 +187,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         <g opacity="0.5">
           <mask
             id="mask4_7_466"
-            style={{ maskType: "luminance" }}
+            style={{ maskType: 'luminance' }}
             maskUnits="userSpaceOnUse"
             x="92"
             y="50"
@@ -248,7 +248,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         />
         <mask
           id="mask5_7_466"
-          style={{ maskType: "luminance" }}
+          style={{ maskType: 'luminance' }}
           maskUnits="userSpaceOnUse"
           x="118"
           y="28"
@@ -272,7 +272,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         />
         <mask
           id="mask6_7_466"
-          style={{ maskType: "luminance" }}
+          style={{ maskType: 'luminance' }}
           maskUnits="userSpaceOnUse"
           x="145"
           y="102"
@@ -296,7 +296,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         />
         <mask
           id="mask7_7_466"
-          style={{ maskType: "luminance" }}
+          style={{ maskType: 'luminance' }}
           maskUnits="userSpaceOnUse"
           x="78"
           y="149"
@@ -320,7 +320,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         />
         <mask
           id="mask8_7_466"
-          style={{ maskType: "luminance" }}
+          style={{ maskType: 'luminance' }}
           maskUnits="userSpaceOnUse"
           x="33"
           y="35"
@@ -344,7 +344,7 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
         />
         <mask
           id="mask9_7_466"
-          style={{ maskType: "luminance" }}
+          style={{ maskType: 'luminance' }}
           maskUnits="userSpaceOnUse"
           x="18"
           y="104"
@@ -363,8 +363,8 @@ const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
           />
         </g>
       </svg>
-    );
-  },
-);
+    )
+  }
+)
 
-export default DaisyFlower;
+export default DaisyFlower
