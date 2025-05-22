@@ -1,13 +1,13 @@
 @import "bootstrap/scss/bootstrap";
 
- /* Base Styles */
- body {
-    font-family:  'Arial', sans-serif;
-    background-color: #fff8f9;
-    color: #333;
+/* Base Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff8f9;
+  color: #333;
 }
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
   color: #d57f91;
   margin-bottom: 30px;
   font-family: "Lucida Handwriting";
-} 
+}
 
 label {
   font-weight: bold;
@@ -34,13 +34,12 @@ footer {
   font-size: 0.9em;
 }
 
-header {  
-  color:#454362;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+header {
+  color: #454362;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   min-height: 400px;
 }
 
-  
 a.btn.rsvp {
   padding: 12px;
   background-color: #d57f91;
@@ -53,80 +52,77 @@ a.btn.rsvp {
   font-weight: 600;
   font-size: 1.3em;
 
-  :hover{
+  :hover {
     background-color: #d57f91;
-    opacity: .8;
+    opacity: 0.8;
   }
-} 
+}
 
-a.btn{
+a.btn {
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
   align-items: center;
   gap: 10px;
 
-  :hover{
+  :hover {
     color: inherit;
     background-color: inherit;
     border-color: var(--bs-btn-hover-border-color);
-    opacity: .8;
+    opacity: 0.8;
   }
 }
 
-  header img {
-    width: 80%;
-    height: auto;
-    max-height: 600px;
-    display: block;
-    margin: 0 auto;
+header img {
+  width: 80%;
+  height: auto;
+  max-height: 600px;
+  display: block;
+  margin: 0 auto;
 }
-.header-text{
+.header-text {
   width: 100%;
   top: 80px;
   text-align: center;
 }
-  header h1 {   
-    font-size: 8em;
-    font-family: "Lucida Handwriting";
-  }
+header h1 {
+  font-size: 8em;
+  font-family: "Lucida Handwriting";
+}
 
-  header h2 {   
-    font-size: 5em;
-    margin-top: 0;
-  }
+header h2 {
+  font-size: 5em;
+  margin-top: 0;
+}
 
-  header p {
-    font-size: 1.5em;    
-  }
+header p {
+  font-size: 1.5em;
+}
 
-  section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-  .event-detail{
-    background-color: #fff5ee;
-    padding: 60px 30px;
-  }
-  .event-detail.where{
-    background-color: #ffdada;
-  }
+.event-detail {
+  background-color: #fff5ee;
+  padding: 60px 30px;
+}
+.event-detail.where {
+  background-color: #ffdada;
+}
 
- 
-
-  .baby-registry{
-    padding: 60px;
-    background-color:  #ffdada; 
-  }
-.baby-registry img{
+.baby-registry {
+  padding: 60px;
+  background-color: #ffdada;
+}
+.baby-registry img {
   max-width: 80%;
   height: 120px;
 }
-  
 
-  .parallax {
+.parallax {
   /* The image used */
   background-image: url("/assets/images/parallax.png");
   background-size: 46%;
@@ -140,57 +136,54 @@ a.btn{
   background-position: center;
   background-repeat: no-repeat;
 }
-.parallax img{
-      max-height: 270px;
+.parallax img {
+  max-height: 270px;
 }
 
-  @media (max-width: 791px) {
-    header{
-      min-height: 300px;
-    }
-    header h1 {
-      font-size: 3.2em;
-    }
-    header h2 {
-      font-size: 2em;
-    }
+@media (max-width: 791px) {
+  header {
+    min-height: 300px;
+  }
+  header h1 {
+    font-size: 3.2em;
+  }
+  header h2 {
+    font-size: 2em;
+  }
 
-    header p {
-      font-size: 1.5em;
-    }
-    .parallax {
-  background-size: 80%;
-  min-height: 300px;
+  header p {
+    font-size: 1.5em;
+  }
+  .parallax {
+    background-size: 80%;
+    min-height: 300px;
+  }
 }
-  }
 
-  .leaf-vertical{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translateX(50%) rotateY(180deg);
-  }
-  .leaf-horizontal{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translateY(50%);
-  }
-  .daisy-flower{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
- 
-  }
-  .daisy-flower-top{
-    position: absolute;
-    bottom: 90px;
-    right: 50px;
- 
-  }
-  .daisy-flower-left{
-    position: absolute;
-    bottom: 50px;
-    right: 90px;
- 
-  }
+.leaf-vertical {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%) rotateY(180deg);
+}
+.leaf-horizontal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(50%);
+}
+.daisy-flower {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.daisy-flower-top {
+  position: absolute;
+  bottom: 90px;
+  right: 50px;
+}
+.daisy-flower-left {
+  position: absolute;
+  bottom: 50px;
+  right: 90px;
+}
