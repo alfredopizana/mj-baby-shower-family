@@ -55,15 +55,24 @@ a.btn.rsvp {
 
   :hover{
     background-color: #d57f91;
+    opacity: .8;
   }
 } 
-  a.btn{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px
+
+a.btn{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+  :hover{
+    color: inherit;
+    background-color: inherit;
+    border-color: var(--bs-btn-hover-border-color);
+    opacity: .8;
   }
+}
 
   header img {
     width: 80%;
