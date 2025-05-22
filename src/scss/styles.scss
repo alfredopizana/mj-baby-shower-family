@@ -1,16 +1,68 @@
 @import "bootstrap/scss/bootstrap";
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+ /* Base Styles */
+ body {
+    font-family:  'Arial', sans-serif;
     background-color: #fff8f9;
     color: #333;
-  }
+}
+p {
+    font-size: 18px;
+}
 
-  header {  
-    color:#454362;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+h2 {
+  text-align: center;
+  color: #d57f91;
+  margin-bottom: 30px;
+  font-family: "Lucida Handwriting";
+} 
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #f9dbe6;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+header {  
+  color:#454362;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  min-height: 400px;
+}
+
+  
+a.btn.rsvp {
+  padding: 12px;
+  background-color: #d57f91;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3em;
+
+  :hover{
+    background-color: #d57f91;
+  }
+} 
+  a.btn{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px
   }
 
   header img {
@@ -46,62 +98,59 @@ body {
   }
 
   .event-detail{
-    background-color: #ffe9ee;
+    background-color: #fff5ee;
     padding: 60px 30px;
   }
   .event-detail.where{
-    background-color: #ffa5ba;
+    background-color: #ffdada;
   }
 
-  h2 {
-    text-align: center;
-    color: #d36ba6;
-    margin-bottom: 30px;
-  }  
+ 
 
   .baby-registry{
     padding: 60px;
-    background-color:  #ffa5ba; 
+    background-color:  #ffdada; 
   }
 .baby-registry img{
   max-width: 80%;
   height: 120px;
 }
-  label {
-    font-weight: bold;
-  }
+  
 
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  .parallax {
+  /* The image used */
+  background-image: url("/assets/images/parallax.png");
+  background-size: 46%;
 
-  a[type="button"] {
-    padding: 12px;
-    background-color: #d36ba6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  /* Set a specific height */
+  margin: 0 auto;
+  min-height: 400px;
 
-  footer {
-    background-color: #f9dbe6;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-  }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax img{
+      max-height: 270px;
+}
 
   @media (max-width: 791px) {
+    header{
+      min-height: 300px;
+    }
     header h1 {
-      font-size: 2em;
+      font-size: 3.2em;
     }
     header h2 {
-      font-size: 1.2em;
+      font-size: 2em;
     }
 
     header p {
-      font-size: 1em;
+      font-size: 1.5em;
     }
+    .parallax {
+  background-size: 80%;
+  min-height: 300px;
+}
   }
