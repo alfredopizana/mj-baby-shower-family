@@ -1,9 +1,9 @@
-import { Button, Image } from "react-bootstrap";
+import { Button, Image } from 'react-bootstrap'
 
 interface ImageButtonProps {
-  link: string;
-  src: string;
-  containerClass: string;
+  link: string
+  src: string
+  containerClass: string
 }
 
 const ImageButton = ({ link, src, containerClass }: ImageButtonProps) => {
@@ -13,6 +13,6 @@ const ImageButton = ({ link, src, containerClass }: ImageButtonProps) => {
         <Image src={src} />
       </Button>
     </div>
-  );
-};
-export default ImageButton;
+  )
+}
+export default ImageButton

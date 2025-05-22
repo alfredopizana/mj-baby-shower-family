@@ -1,12 +1,12 @@
-import CustomButton from "../CustomButton";
+import CustomButton from '../CustomButton'
 
 interface EventDetailProps {
-  title: string;
-  text: string;
-  styleName: string;
-  link: string;
-  buttonText: string;
-  icon: string;
+  title: string
+  text: string
+  styleName: string
+  link: string
+  buttonText: string
+  icon: string
 }
 
 const EventDetail = ({
@@ -20,7 +20,7 @@ const EventDetail = ({
   return (
     <div
       className={
-        "w-100 w-md-50 event-detail d-flex flex-column justify-content-between " +
+        'w-100 w-md-50 event-detail d-flex flex-column justify-content-between ' +
         styleName
       }
     >
@@ -34,6 +34,6 @@ const EventDetail = ({
         icon={icon}
       />
     </div>
-  );
-};
-export default EventDetail;
+  )
+}
+export default EventDetail

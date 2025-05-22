@@ -1,14 +1,14 @@
-import { useState } from "react";
-import "./App.css";
-import HeroBanner from "./components/HeroBanner";
-import EventDetail from "./components/EventDetail";
-import CustomButton from "./components/CustomButton";
-import ImageButton from "./components/ImageButton";
+import { useState } from 'react'
+import './App.css'
+import HeroBanner from './components/HeroBanner'
+import EventDetail from './components/EventDetail'
+import CustomButton from './components/CustomButton'
+import ImageButton from './components/ImageButton'
 
-import banner from "./assets/images/banner.png";
+import banner from './assets/images/banner.png'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -82,14 +82,14 @@ function App() {
             target="_blank"
           >
             33 1698 2226
-          </a>{" "}
-          (Alfredo) ó{" "}
+          </a>{' '}
+          (Alfredo) ó{' '}
           <a
             href="https://api.whatsapp.com/send?phone=3316930366"
             target="_blank"
           >
             33 1693 0366
-          </a>{" "}
+          </a>{' '}
           (Sofy)
         </p>
       </section>
@@ -104,7 +104,7 @@ function App() {
         </p>
       </footer>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

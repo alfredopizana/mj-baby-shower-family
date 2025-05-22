@@ -1,19 +1,19 @@
-import { Calendar, MapPin } from "lucide-react";
-import { Button } from "react-bootstrap";
+import { Calendar, MapPin } from 'lucide-react'
+import { Button } from 'react-bootstrap'
 
 interface CustomButtonProps {
-  text: string;
-  link: string;
-  buttonVariant: string;
-  buttonClass: string;
-  icon: string;
+  text: string
+  link: string
+  buttonVariant: string
+  buttonClass: string
+  icon: string
 }
 
 const iconMap = {
   map: <MapPin size={20} />,
   calendar: <Calendar size={20} />,
-  none: "",
-};
+  none: '',
+}
 
 const CustomButton = ({
   text,
@@ -32,6 +32,6 @@ const CustomButton = ({
       {iconMap[icon as keyof typeof iconMap]}
       {text}
     </Button>
-  );
-};
-export default CustomButton;
+  )
+}
+export default CustomButton
