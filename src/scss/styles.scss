@@ -163,3 +163,34 @@ a.btn{
   min-height: 300px;
 }
   }
+
+  .leaf-vertical{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%) rotateY(180deg);
+  }
+  .leaf-horizontal{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+  }
+  .daisy-flower{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+ 
+  }
+  .daisy-flower-top{
+    position: absolute;
+    bottom: 90px;
+    right: 50px;
+ 
+  }
+  .daisy-flower-left{
+    position: absolute;
+    bottom: 50px;
+    right: 90px;
+ 
+  }
