@@ -1,4 +1,4 @@
-import { forwardRef, SVGProps } from 'react'
+import { forwardRef, type SVGProps } from 'react'
 
 type Props = {
   name?: string
@@ -6,6 +6,8 @@ type Props = {
 
 const Leaf = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
   (props, ref) => {
+
+    
     return (
       <svg
         width="209"

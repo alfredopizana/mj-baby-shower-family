@@ -37,7 +37,7 @@ function App() {
           link="https://forms.gle/7GkCuJEFUfvxXPFn9"
           text="Confirmar asistencia"
           buttonVariant=""
-          buttonClass="rsvp"
+          buttonClass="rsvp btn-primary "
           icon="none"
         />
       </section>
