@@ -1,5 +1,3 @@
-import Leaf from '../svgs/Leaf'
-import DaisyFlower from '../svgs/DaisyFlower'
 import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -8,9 +6,7 @@ import { Flip } from 'gsap/Flip'
 import { GSDevTools } from 'gsap/GSDevTools'
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin'
 import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin'
-
-import banner from '../../assets/images/banner.png'
-import Flowers from '../svgs/flowers'
+import Flowers from '../svgs/Flowers'
 
 const HeroBanner = () => {
   gsap.registerPlugin(
@@ -21,14 +17,10 @@ const HeroBanner = () => {
     MorphSVGPlugin,useGSAP
   )
   const flowersRef = useRef<SVGSVGElement>(null)
-  const containerRef = useRef<SVGSVGElement>(null)
-  const containerRotatedRef = useRef<SVGSVGElement>(null)
-//     const leafRef = useRef<SVGSVGElement>(null)
-//   const leafRef2 = useRef<SVGSVGElement>(null)
-//   const daisyFlowerRef = useRef<SVGSVGElement>(null)
-//   const daisyFlowerTopRef = useRef<SVGSVGElement>(null)
-//   const daisyFlowerLeftRef = useRef<SVGSVGElement>(null)
-const scaleModifier = (scale, target) => {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const containerRotatedRef = useRef<HTMLDivElement>(null)
+
+const scaleModifier = (scale:any, target:any) => {
   return scale
 }
 
@@ -42,9 +34,9 @@ useGSAP(( ) => {
     .from('[id^="stem"]', { drawSVG: '50% 50%' }, 0)
     .to('[id^="stem"]', { drawSVG: '0% 100%' }, 0)
 
-  const startScale = 0
-  const endScale = 1
-  const start = 0.0
+  // const startScale = 0
+  // const endScale = 1
+  // const start = 0.0
  
       leafTimeline
         .from(
@@ -205,9 +197,9 @@ useGSAP(( ) => {
     .from('[id^="stem"]', { drawSVG: '50% 50%' }, 0)
     .to('[id^="stem"]', { drawSVG: '0% 100%' }, 0)
 
-  const startScale = 0
-  const endScale = 1
-  const start = 0.0
+  // const startScale = 0
+  // const endScale = 1
+  // const start = 0.0
  
       leafTimeline
         .from(

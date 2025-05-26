@@ -1,11 +1,11 @@
-import { forwardRef, SVGProps } from 'react'
+import { forwardRef, type SVGProps } from 'react'
 
 type Props = {
   name?: string
 }
 
 const DaisyFlower = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
-  (props, ref) => {
+  (props:Props, ref:any) => {
     return (
       <svg
         width="169"

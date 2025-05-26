@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import HeroBanner from './components/HeroBanner'
 import EventDetail from './components/EventDetail'
 import CustomButton from './components/CustomButton'
 import ImageButton from './components/ImageButton'
 
-import banner from './assets/images/banner.png'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>

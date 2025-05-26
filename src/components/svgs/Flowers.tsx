@@ -1,14 +1,12 @@
-import { useGSAP } from '@gsap/react'
+
 import { forwardRef, type SVGProps } from 'react'
 
 type Props = {
   name?: string
 }
-const scaleModifier = (scale, target) => {
-    return scale
-  }
+
 const Flowers = forwardRef<SVGSVGElement, Props & SVGProps<SVGSVGElement>>(
-  (props, ref) => {
+  (props:any, ref:any) => {
 
 
 
