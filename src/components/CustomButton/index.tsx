@@ -1,4 +1,4 @@
-import { Calendar, MapPin } from 'lucide-react'
+import { Calendar, MapPin, MessageSquareText } from 'lucide-react'
 import { Button } from 'react-bootstrap'
 
 interface CustomButtonProps {
@@ -12,6 +12,7 @@ interface CustomButtonProps {
 const iconMap = {
   map: <MapPin size={20} />,
   calendar: <Calendar size={20} />,
+  message: <MessageSquareText size={20} />,
   none: '',
 }
 

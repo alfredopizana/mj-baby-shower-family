@@ -116,7 +116,7 @@ section {
 }
 
 .baby-registry {
-  padding: 60px;
+  padding: 30px;
   background-color: #ffdada;
 }
 .baby-registry img {
@@ -126,7 +126,7 @@ section {
 
 .parallax {
   /* The image used */
-  background-image: url('/parallax.png');
+  background-image: url('../assets/images/banner.png');
   background-size: 46%;
 
   /* Set a specific height */
@@ -267,11 +267,21 @@ section {
   //padding: 350px 50px;
   
 }
+.questions a.btn{
+  max-width: 60%;
+  justify-content:center;
+}
 @media (min-width:768px) {
   .banner-content{
 
   }
   .banner{
     min-height: 100dvh;
+  }
+  .baby-registry {
+    padding: 60px;
+  }
+  .questions a.btn{
+    max-width: 40%;
   }
 }

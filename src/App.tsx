@@ -3,8 +3,10 @@ import HeroBanner from './components/HeroBanner'
 import EventDetail from './components/EventDetail'
 import CustomButton from './components/CustomButton'
 import ImageButton from './components/ImageButton'
-
-
+import liverpoolLogo from './assets/images/liverpool.png'
+import amazonLogo from './assets/images/amazon.png'
+import footer from './assets/images/footer.png'
+import { Image } from 'react-bootstrap'
 
 function App() {
 
@@ -27,7 +29,7 @@ function App() {
             title="¿En dónde?"
             text="Terraza Berath"
             styleName="where"
-            link="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250712T203000Z%2F20250713T020000Z&location=https%3A%2F%2Fmaps.app.goo.gl%2Ft63jB4Ae3Xozdua29&text=Baby%20Shower%20Flora"
+            link="https://maps.app.goo.gl/t63jB4Ae3Xozdua29"
             buttonText="Sta. Fe 553, La Tuzania, Zapopan."
             icon="map"
           />
@@ -54,47 +56,38 @@ function App() {
         <div className="d-flex flex-column flex-md-row text-center justify-content-center">
           <ImageButton
             containerClass=""
-            src="https://placehold.co/50"
-            link="https://www.amazon.com.mx/baby-reg/jesusalfredopizaa-espinosa-sofy-hdz-septiembre-2025-zapopan/3OTNG2VC888U9"
+            src={liverpoolLogo}
+            link="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51654538"
           />
           <ImageButton
             containerClass=""
-            src="https://placehold.co/50"
+            src={amazonLogo}
             link="https://www.amazon.com.mx/baby-reg/jesusalfredopizaa-espinosa-sofy-hdz-septiembre-2025-zapopan/3OTNG2VC888U9"
           />
         </div>
       </div>
 
-      <section className="container questions mt-3 mt-md-5 pb-0">
+      <section className="container questions mt-3 pb-0">
         <h2>¿Preguntas?</h2>
         <p className="text-center">
-          Comunicate con nosotros a los números <br />
+          Comunícate con nosotros a los números:
           <CustomButton
             link="https://api.whatsapp.com/send?phone=3316982226"
-            text="33 1698 2226"
+            text="33 1698 2226 (Alfredo)"
             buttonVariant="btn-link"
             buttonClass=""
-            icon=""
+            icon="message"
           />
-          <a
-            href="https://api.whatsapp.com/send?phone=3316982226"
-            target="_blank"
-          >
-            33 1698 2226
-          </a>{' '}
-          (Alfredo) ó{' '}
-          <a
-            href="https://api.whatsapp.com/send?phone=3316930366"
-            target="_blank"
-          >
-            33 1693 0366
-          </a>{' '}
-          (Sofy)
+          <CustomButton
+            link="https://api.whatsapp.com/send?phone=3316930366"
+            text="33 1693 0366 (Sofy)"
+            buttonVariant="btn-link"
+            buttonClass=""
+            icon="message"
+          />          
         </p>
       </section>
-      <div className="">
-        <img className="w-100" src="/assets/images/footer_2.png" />
-      </div>
+      <Image src={footer} className='w-100' />
 
       <footer>
         <p>
