@@ -5,12 +5,10 @@ import CustomButton from './components/CustomButton'
 import ImageButton from './components/ImageButton'
 import liverpoolLogo from './assets/images/liverpool.png'
 import amazonLogo from './assets/images/amazon.png'
-import footer from './assets/images/footer.png'
+// import footer from './assets/images/footer.png'
 import { Image } from 'react-bootstrap'
 
 function App() {
-
-
   return (
     <>
       <HeroBanner />
@@ -43,9 +41,7 @@ function App() {
         />
       </section>
 
-      <div className="container py-2">
-        <div className="parallax"></div>
-      </div>
+      <div className="parallax"></div>
 
       <div className="container-fluid baby-registry">
         <p className="w-80 text-center">
@@ -84,10 +80,10 @@ function App() {
             buttonVariant="btn-link"
             buttonClass=""
             icon="message"
-          />          
+          />
         </p>
       </section>
-      <Image src={footer} className='w-100' />
+      {/* <Image src={footer} className="w-100" /> */}
 
       <footer>
         <p>

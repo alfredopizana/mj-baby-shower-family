@@ -1,5 +1,5 @@
 @import 'bootstrap/scss/bootstrap';
-
+@import url('https://fonts.cdnfonts.com/css/lucida-handwriting-std');
 /* Base Styles */
 body {
   font-family: 'Arial', sans-serif;
@@ -12,9 +12,9 @@ p {
 
 h2 {
   text-align: center;
-  color: #d57f91;
+  color: #b392ff;
   margin-bottom: 30px;
-  font-family: 'Lucida Handwriting';
+  font-family: 'Lucida Handwriting Std';
 }
 
 label {
@@ -89,7 +89,7 @@ header img {
 }
 header h1 {
   font-size: 8em;
-  font-family: 'Lucida Handwriting';
+  font-family: 'Lucida Handwriting Std';
 }
 
 header h2 {
@@ -117,7 +117,7 @@ section {
 
 .baby-registry {
   padding: 30px;
-  background-color: #ffdada;
+  background-color: #ffdafd;
 }
 .baby-registry img {
   max-width: 80%;
@@ -126,17 +126,20 @@ section {
 
 .parallax {
   /* The image used */
-  background-image: url('../assets/images/banner.png');
+  background-image: url('/parallax-toys.png');
   background-size: 46%;
 
   /* Set a specific height */
   margin: 0 auto;
-  min-height: 400px;
-
+  min-height: 300px;
+  width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  //background-size: cover;
+  background-size: cover;
 }
 .parallax img {
   max-height: 270px;
@@ -155,10 +158,6 @@ section {
 
   header p {
     font-size: 1.5em;
-  }
-  .parallax {
-    background-size: 80%;
-    min-height: 300px;
   }
 }
 
@@ -240,48 +239,46 @@ section {
   }
 }
 
-.flowers{
+.flowers {
   position: absolute;
-  max-height: min(30dvh,30dvw);
-  max-height: min(30dvh,30dvw);
+  max-height: min(30dvh, 30dvw);
+  max-height: min(30dvh, 30dvw);
   aspect-ratio: 1/1;
   bottom: 0;
   right: 0;
-  & > svg{
+  & > svg {
     width: 100%;
     height: 100%;
     aspect-ratio: 1/1;
   }
 }
-.flowers-rotated{
+.flowers-rotated {
   transform: rotate(180deg);
-  top: 0 ;
+  top: 0;
   left: 0;
   right: auto;
   bottom: auto;
 }
-.banner{
+.banner {
   min-height: 70dvh;
 }
-.banner-content{
+.banner-content {
   //padding: 350px 50px;
-  
 }
-.questions a.btn{
+.questions a.btn {
   max-width: 60%;
-  justify-content:center;
+  justify-content: center;
 }
-@media (min-width:768px) {
-  .banner-content{
-
+@media (min-width: 768px) {
+  .banner-content {
   }
-  .banner{
+  .banner {
     min-height: 100dvh;
   }
   .baby-registry {
     padding: 60px;
   }
-  .questions a.btn{
+  .questions a.btn {
     max-width: 40%;
   }
 }
