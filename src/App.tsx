@@ -17,7 +17,7 @@ function App() {
         <div className="d-flex flex-column flex-md-row text-center">
           <EventDetail
             title="¿Cuándo?"
-            text="Sabado Julio 12, 2025<br/>a partir de 2:30pm"
+            text="Sabado 12 de Julio, 2025<br/>a partir de 2:30pm"
             styleName="when"
             link="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250712T203000Z%2F20250713T020000Z&location=https%3A%2F%2Fmaps.app.goo.gl%2Ft63jB4Ae3Xozdua29&text=Baby%20Shower%20Flora"
             buttonText="Agregar a mi calendario"
@@ -63,7 +63,7 @@ function App() {
         </div>
       </div>
 
-      <section className="container questions mt-3 pb-0">
+      <section className="container questions">
         <h2>¿Preguntas?</h2>
         <p className="text-center">
           Comunícate con nosotros a los números:

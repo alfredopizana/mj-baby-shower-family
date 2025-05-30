@@ -121,7 +121,7 @@ section {
 }
 .baby-registry img {
   max-width: 80%;
-  height: 120px;
+  height: 200px;
 }
 
 .parallax {
@@ -266,7 +266,6 @@ section {
   //padding: 350px 50px;
 }
 .questions a.btn {
-  max-width: 60%;
   justify-content: center;
 }
 @media (min-width: 768px) {
@@ -277,6 +276,7 @@ section {
   }
   .baby-registry {
     padding: 60px;
+    padding-bottom: 0;
   }
   .questions a.btn {
     max-width: 40%;
