@@ -111,8 +111,18 @@ section {
   background-color: #ffe5f8;
   padding: 60px 30px;
 }
+
 .event-detail.where {
   background-color: #ffdafd;
+}
+
+.event-details-divider {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  img {
+    max-width: 100%;
+  }
 }
 
 .baby-registry {

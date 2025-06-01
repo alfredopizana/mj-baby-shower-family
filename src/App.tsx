@@ -8,10 +8,15 @@ import amazonLogo from './assets/images/amazon.png'
 // import footer from './assets/images/footer.png'
 import { Image } from 'react-bootstrap'
 
+import eventDetailImage from './assets/images/event-details-divider.png'
+
 function App() {
   return (
     <>
       <HeroBanner />
+      <div className="event-details-divider">
+        <img src={eventDetailImage} />
+      </div>
       <section className="container event-details">
         <h2>Detalles del Evento:</h2>
         <div className="d-flex flex-column flex-md-row text-center">
