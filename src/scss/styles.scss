@@ -2,9 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/lucida-handwriting-std');
 /* Base Styles */
 body {
-    font-family: "Arial", sans-serif;
-    background-color: #fefefe;
-    color: #490034;
+  font-family: 'Arial', sans-serif;
+  background-color: #fefefe;
+  color: #490034;
 }
 p {
   font-size: 18px;
@@ -15,8 +15,8 @@ h2 {
   color: #ff0bac;
   margin-bottom: 30px;
   font-family: 'Lucida Handwriting Std';
-  &.amber{
-    color:#fec437;
+  &.amber {
+    color: #fec437;
   }
 }
 
@@ -30,7 +30,7 @@ input {
   border-radius: 5px;
 }
 
-hr.separator{
+hr.separator {
   margin: 0 auto;
   color: #490034;
 }
@@ -39,8 +39,7 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
-  color:#FFF;
-   
+  color: #fff;
 }
 
 header {
@@ -124,7 +123,7 @@ section {
     &.where {
       border-color: #ff0bac;
     }
-    a.btn:hover{
+    a.btn:hover {
       background-color: #fdbcfd;
       color: #000;
     }
@@ -132,6 +131,7 @@ section {
 }
 .event-details-divider {
   display: flex;
+
   justify-content: center;
   margin-top: 40px;
   img {
@@ -168,10 +168,10 @@ section {
   border: #333 solid 1px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  border-color:#fec437;
+  border-color: #fec437;
   /*background-color: #ffdbf5;*/
-  &:hover{
-   background-color: #ffe190;
+  &:hover {
+    background-color: #ffe190;
   }
   p {
     text-decoration: none;
@@ -351,11 +351,11 @@ section {
 .questions a.btn {
   border-color: #ff0bac;
   justify-content: center;
-  
-  &:hover{
-      background-color: #fdbcfd;
-      color: #000;
-    }
+
+  &:hover {
+    background-color: #fdbcfd;
+    color: #000;
+  }
 }
 @media (min-width: 768px) {
   .banner-content {
@@ -371,10 +371,10 @@ section {
     max-width: 40%;
   }
   .flowers {
-  right: 20px; 
-}
-.flowers-rotated {
-  top: 20px;
-  left: 20px;
-}
+    right: 20px;
+  }
+  .flowers-rotated {
+    top: 20px;
+    left: 20px;
+  }
 }
