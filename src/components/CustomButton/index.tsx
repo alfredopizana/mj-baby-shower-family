@@ -1,5 +1,6 @@
 import { Calendar, MapPin, MessageSquareText } from 'lucide-react'
 import { Button } from 'react-bootstrap'
+import Whatsapp from '../svgs/whatsapp'
 
 interface CustomButtonProps {
   text: string
@@ -13,6 +14,7 @@ const iconMap = {
   map: <MapPin size={20} />,
   calendar: <Calendar size={20} />,
   message: <MessageSquareText size={20} />,
+  whatsapp: <Whatsapp />,
   none: '',
 }
 

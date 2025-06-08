@@ -17,22 +17,24 @@ const EventDetail = ({
   buttonText,
   icon,
 }: EventDetailProps) => {
-  return (
+  return (    
     <div
       className={
-        'w-100 w-md-50 event-detail d-flex flex-column justify-content-between ' +
+        'card w-100 event-detail ' +
         styleName
       }
     >
-      <h3>{title}</h3>
-      <p dangerouslySetInnerHTML={{ __html: text }}></p>
-      <CustomButton
-        link={link}
-        text={buttonText}
-        buttonVariant="outline-dark"
-        buttonClass=""
-        icon={icon}
-      />
+      <div className='card-body d-flex flex-column justify-content-between'>
+        <h3>{title}</h3>
+        <p dangerouslySetInnerHTML={{ __html: text }}></p>
+        <CustomButton
+          link={link}
+          text={buttonText}
+          buttonVariant="outline-dark"
+          buttonClass=""
+          icon={icon}
+        />
+      </div>
     </div>
   )
 }

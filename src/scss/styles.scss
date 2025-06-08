@@ -2,9 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/lucida-handwriting-std');
 /* Base Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #fff8f9;
-  color: #333;
+    font-family: "Arial", sans-serif;
+    background-color: #fefefe;
+    color: #490034;
 }
 p {
   font-size: 18px;
@@ -12,9 +12,12 @@ p {
 
 h2 {
   text-align: center;
-  color: #b392ff;
+  color: #ff0bac;
   margin-bottom: 30px;
   font-family: 'Lucida Handwriting Std';
+  &.amber{
+    color:#fec437;
+  }
 }
 
 label {
@@ -27,11 +30,17 @@ input {
   border-radius: 5px;
 }
 
+hr.separator{
+  margin: 0 auto;
+  color: #490034;
+}
 footer {
-  background-color: #f9dbe6;
+  background-color: #8155ba;
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
+  color:#FFF;
+   
 }
 
 header {
@@ -43,7 +52,7 @@ header {
 a.btn.rsvp {
   margin-top: 20px;
   padding: 12px;
-  background-color: #b392ff;
+  background-color: #8155ba;
   color: #333;
   border: none;
   border-radius: 5px;
@@ -107,32 +116,95 @@ section {
   margin: auto;
 }
 
-.event-detail {
-  background-color: #ffe5f8;
-  padding: 60px 30px;
+.event-details {
+  gap: 12px;
+  .event-detail {
+    border-color: #fe5bd6;
+    padding: 60px 30px;
+    &.where {
+      border-color: #ff0bac;
+    }
+    a.btn:hover{
+      background-color: #fdbcfd;
+      color: #000;
+    }
+  }
 }
-
-.event-detail.where {
-  background-color: #ffdafd;
-}
-
 .event-details-divider {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   img {
-    max-width: 100%;
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 768px) {
+  .event-details-divider {
+    img {
+      max-width: 100%;
+    }
   }
 }
 
 .baby-registry {
   padding: 30px;
-  background-color: #ffdafd;
+  /*background-color: #ffdafd;*/
+  .card {
+    max-width: 18rem;
+    /*background-color: #fff8f9;*/
+    img {
+      max-width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+  }
 }
-.baby-registry img {
-  max-width: 80%;
-  height: 200px;
+
+.baby-registry-card {
+  text-decoration: none;
+  color: #333;
+  border-radius: 0.5rem;
+  border: #333 solid 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-color:#fec437;
+  /*background-color: #ffdbf5;*/
+  &:hover{
+   background-color: #ffe190;
+  }
+  p {
+    text-decoration: none;
+  }
+  .baby-registry-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .baby-registry-card-image {
+    border-radius: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 300px;
+      max-height: 200px;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+  }
 }
+
+// .baby-registry .baby-registry img {
+//   max-width: 80%;
+//   max-height: 200px;
+// }
 
 .parallax {
   /* The image used */
@@ -148,8 +220,9 @@ section {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  //background-size: cover;
   background-size: cover;
+
+  //background-size: cover;
 }
 .parallax img {
   max-height: 270px;
@@ -255,7 +328,7 @@ section {
   max-height: min(30dvh, 30dvw);
   aspect-ratio: 1/1;
   bottom: 0;
-  right: 0;
+  right: 10px;
   & > svg {
     width: 100%;
     height: 100%;
@@ -264,8 +337,8 @@ section {
 }
 .flowers-rotated {
   transform: rotate(180deg);
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
   right: auto;
   bottom: auto;
 }
@@ -276,7 +349,13 @@ section {
   //padding: 350px 50px;
 }
 .questions a.btn {
+  border-color: #ff0bac;
   justify-content: center;
+  
+  &:hover{
+      background-color: #fdbcfd;
+      color: #000;
+    }
 }
 @media (min-width: 768px) {
   .banner-content {
@@ -291,4 +370,11 @@ section {
   .questions a.btn {
     max-width: 40%;
   }
+  .flowers {
+  right: 20px; 
+}
+.flowers-rotated {
+  top: 20px;
+  left: 20px;
+}
 }
