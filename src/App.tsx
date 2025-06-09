@@ -14,6 +14,20 @@ import { ExternalLink, Gift } from 'lucide-react'
 function App() {
   return (
     <>
+      <link
+        itemProp="thumbnailUrl"
+        href="https://baby-shower-self.vercel.app/cover_image.png"
+      />
+      <span
+        itemProp="thumbnail"
+        itemScope
+        itemType="http://schema.org/ImageObject"
+      >
+        <link
+          itemProp="url"
+          href="https://baby-shower-self.vercel.app/cover_image.png"
+        />
+      </span>
       <HeroBanner />
       <div className="event-details-divider text-center">
         <img src={eventDetailImage} />
@@ -51,8 +65,9 @@ function App() {
 
       <div className="container-fluid baby-registry py-5">
         <div>
-          
-          <h2 className="text-center amber">Mesa de Regalos   <Gift /></h2>
+          <h2 className="text-center amber">
+            Mesa de Regalos <Gift />
+          </h2>
         </div>
         <p className="w-80 text-center">
           Su presencia es el mejor regalo que podríamos recibir. Pero si desean
@@ -102,18 +117,31 @@ function App() {
             <div className="baby-registry-card-body">
               <p className="card-text">Ir a la mesa de Regalos </p>
             </div>
-          </a>          
+          </a>
         </div>
-        <p className='mt-3 w-80 text-center'><em><small>Nota de los papás: Notarás que no hemos incluido pañales desechables en la lista. Esto se debe a que hemos optado por una alternativa más amigable con el medio ambiente.
-¡Gracias por tu comprensión y apoyo!</small></em></p>
+        <p className="mt-3 w-80 text-center">
+          <em>
+            <small>
+              Nota de los papás: Notarás que no hemos incluido pañales
+              desechables en la lista. Esto se debe a que hemos optado por una
+              alternativa más amigable con el medio ambiente. ¡Gracias por tu
+              comprensión y apoyo!
+            </small>
+          </em>
+        </p>
       </div>
-      <hr className='w-75 separator'/>
+      <hr className="w-75 separator" />
       <section className="container questions">
         <h2>¿Preguntas?</h2>
         <p className="text-center">
-          Comunícate con nosotros a los números:<br />
-          <em><small>Click en los siguientes links para mandarnos un mensaje directo por whatsapp</small></em>
-          
+          Comunícate con nosotros a los números:
+          <br />
+          <em>
+            <small>
+              Click en los siguientes links para mandarnos un mensaje directo
+              por whatsapp
+            </small>
+          </em>
           <CustomButton
             link="https://api.whatsapp.com/send?phone=3316982226"
             text="33 1698 2226 (Alfredo)"
