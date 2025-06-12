@@ -135,14 +135,14 @@ section {
   justify-content: center;
   margin-top: 40px;
   img {
-    max-width: 340px;
+    max-width: 300px;
   }
 }
 
 @media (min-width: 768px) {
   .event-details-divider {
     img {
-      max-width: 100%;
+      max-width: 320px;
     }
   }
 }
@@ -208,7 +208,7 @@ section {
 
 .parallax {
   /* The image used */
-  background-image: url('/parallax-toys.png');
+  background-image: url('/parallax-1.jpeg');
   background-size: 46%;
 
   /* Set a specific height */
@@ -217,7 +217,7 @@ section {
   width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-size: cover;
