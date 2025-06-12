@@ -367,7 +367,7 @@ useGSAP(( ) => {
           <div className="container-fluid header-text ">
             <h1>Oh Baby!</h1>
             <p>Acompáñanos a celebrar la llegada de:</p>
-            <h2>Flora Eleonor</h2>
+            <h2>Maria Julieta</h2>
           </div>
         </div>
       </header>
