@@ -15,7 +15,7 @@ function App() {
     <>
       <link
         itemProp="thumbnailUrl"
-        href="https://maria-julieta-friends.vercel.app/cover_image.jpeg"
+        href="https://maria-julieta-family.vercel.app/cover_image.jpeg"
       />
       <span
         itemProp="thumbnail"
@@ -24,7 +24,7 @@ function App() {
       >
         <link
           itemProp="url"
-          href="https://maria-julieta-friends.vercel.app/cover_image.jpeg"
+          href="https://maria-julieta-family.vercel.app/cover_image.jpeg"
         />
       </span>
       <HeroBanner />
