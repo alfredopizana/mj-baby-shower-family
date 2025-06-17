@@ -15,7 +15,7 @@ function App() {
     <>
       <link
         itemProp="thumbnailUrl"
-        href="https://maria-julieta-family.vercel.app/cover_image.jpeg"
+        href="https://maria-julieta-family.vercel.app/cover_image.jpeg?v=1"
       />
       <span
         itemProp="thumbnail"
@@ -24,7 +24,7 @@ function App() {
       >
         <link
           itemProp="url"
-          href="https://maria-julieta-family.vercel.app/cover_image.jpeg"
+          href="https://maria-julieta-family.vercel.app/cover_image.jpeg?v=1"
         />
       </span>
       <HeroBanner />
@@ -36,9 +36,9 @@ function App() {
         <div className="d-flex flex-column flex-md-row text-center event-details">
           <EventDetail
             title="¿Cuándo?"
-            text="Domingo 6 de Julio, 2025<br/>a partir de 2:00pm"
+            text="Domingo 20 de Julio, 2025<br/>a partir de 2:00pm"
             styleName="when"
-            link="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250706T200000Z%2F20250707T040000Z&location=https%3A%2F%2Fwww.google.com.mx%2Fmaps%2Fplace%2FJardines%2Bde%2Blos%2BCerezos%2B1840%2C%2BJardines%2Bdel%2BVergel%2C%2B45130%2BZapopan%2C%2BJal.%2F%4020.7530663%2C-103.3729022%2C17z%2Fdata%3D%214m6%213m5%211s0x8428aff7141b05cd%3A0x322d8c6f1030fe5b%218m2%213d20.7531566%214d-103.3720546%2116s%252Fg%252F11swtdnrsw%3Fentry%3Dttu%26g_ep%3DEgoyMDI1MDYxMC4wIKXMDSoASAFQAw%253D%253D&text=Baby%20Shower%20Mar%C3%ADa%20Julieta"
+            link="https://calendar.google.com/calendar/u/0/r/eventedit?dates=20250720T200000Z/20250721T040000Z&location=https://www.google.com.mx/maps/place/Jardines%2Bde%2Blos%2BCerezos%2B1840,%2BJardines%2Bdel%2BVergel,%2B45130%2BZapopan,%2BJal./@20.7530663,-103.3729022,17z/data%3D!4m6!3m5!1s0x8428aff7141b05cd:0x322d8c6f1030fe5b!8m2!3d20.7531566!4d-103.3720546!16s%252Fg%252F11swtdnrsw?entry%3Dttu%26g_ep%3DEgoyMDI1MDYxMC4wIKXMDSoASAFQAw%253D%253D&text=Baby+Shower+Mar%C3%ADa+Julieta"
             buttonText="Agregar a mi calendario"
             icon="calendar"
           />
